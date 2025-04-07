@@ -15,23 +15,35 @@
 
   <nav>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Our Projects</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#" class="nav-link" data-target="home">Home</a></li>
+      <li><a href="#" class="nav-link" data-target="projects">Our Projects</a></li>
+      <li><a href="#" class="nav-link" data-target="contact">Contact</a></li>
     </ul>
   </nav>
-
-  <section id="projects">
-    <h2>Our Websites</h2>
-    <div class="project" data-info="CJDeShon's professional resume">
-      <a href="resume.pdf" target="_blank">Resume</a>
+  
+  <!-- Home Section -->
+  <section id="home" class="content-section">
+    <h2>Welcome to CDSoftware</h2>
+    <p>Our mission is to build modern, simple, and scalable digital products that empower businesses and individuals alike.</p>
+    <p><a href="resume.pdf" target="_blank">View My Resume</a></p>
+  </section>
+  
+  <!-- Projects Section -->
+  <section id="projects" class="content-section" style="display: none;">
+    <h2>Our Projects</h2>
+    <div class="project" data-info="University project webpage hosted by cfbpicks">
+      <a href="https://cfbpicks.live/blackjackplusplus.com/login.php" target="_blank">Blackjack++ Login</a>
     </div>
-    <div class="project" data-info="A login page for Blackjack++ hosted by cfbpicks">
-        <a href="https://cfbpicks.live/blackjackplusplus.com/login.php" target="_blank">Blackjack++ Login</a>
+    <div class="project" data-info="MillerPrecision webpage hosted by CDSoftware">
+      <a href="MillerPrecision">MillerPrecision</a>
     </div>
-    <div class="project" data-info="Miller Precision webpage hosted by CDSoftware">
-      <a href="#">MillerPrecision</a>
-    </div>
+  </section>
+  
+  <!-- Contact Section -->
+  <section id="contact" class="content-section" style="display: none;">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:caydendeshon@gmail.com">caydendeshon@gmail.com</a></p>
+    <p>Phone: (309) 648-7840</p>
   </section>
 
   <footer>

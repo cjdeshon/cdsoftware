@@ -48,6 +48,11 @@ body {
     font-size: 14px;
     margin-top: 5px;
   }
+
+  .content-section {
+    padding: 30px;
+    text-align: center;
+  }
   
   footer {
     background: #ddd;
