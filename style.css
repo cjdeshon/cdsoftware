@@ -12,6 +12,24 @@ body {
     padding: 20px;
     text-align: center;
   }
+
+  .logo-wrapper {
+    height: 100px; /* Set your preferred visible height */
+    width: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    display: inline-block;
+    max-width: 250px;
+    margin: 0 auto 10px;
+  }
+  
+  .logo {
+    width: 100%;
+    height: auto;
+    display: block;
+    transform: translateY(-29%);
+    border-radius: 20px;
+  }
   
   nav ul {
     display: flex;
@@ -81,6 +99,13 @@ body {
     font-size: 14px;
     margin-top: 10px;
     font-style: italic;
+  }
+
+  .icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 8px;
   }
   
   .content-section {
