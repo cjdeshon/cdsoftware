@@ -23,3 +23,11 @@ $(document).ready(function() {
       }
     );
   });
+
+  $('.see-example').click(function(e) {
+    e.preventDefault();
+    const target = $(this).data('target');
+  
+    $('.content-section').hide();
+    $('#' + target).fadeIn(200);
+  });

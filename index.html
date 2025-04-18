@@ -12,25 +12,87 @@
 <body>
 
   <header>
+    <div class="header-left">
+      <div class="header-text">Discuss Hosting Options:</div>
+      <a href="tel:3096487840" class="header-button">Call Now</a>
+    </div>
+  
     <div class="logo-wrapper">
       <img src="images/CDIconHeader.png" alt="CDSoftware Logo" class="logo">
+      <p>Your partner in modern web solutions</p>
     </div>
-    <p>Your partner in modern web solutions</p>
+  
+    <div class="header-right">
+      <div class="header-text">Contact us today!</div>
+      <div class="header-text">(309)648-7840</div>
+    </div>
   </header>
-
-  <nav>
-    <ul>
-      <li><a href="#" class="nav-link" data-target="home">Home</a></li>
-      <li><a href="#" class="nav-link" data-target="projects">Our Projects</a></li>
-      <li><a href="#" class="nav-link" data-target="contact">Contact</a></li>
-    </ul>
-  </nav>
+  
+  <!-- Wrap this in a sticky container -->
+  <div class="sticky-nav">
+    <nav>
+      <ul>
+        <li><a href="#" class="nav-link" data-target="home">Home</a></li>
+        <li><a href="#" class="nav-link" data-target="projects">Our Projects</a></li>
+        <li><a href="#" class="nav-link" data-target="contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
   
   <!-- Home Section -->
   <section id="home" class="content-section">
-    <h2>Welcome to CDSoftware</h2>
-    <p>Our mission is to build modern, simple, and scalable digital products that empower businesses and individuals alike.</p>
-    <p><a href="resume.pdf" target="_blank">View My Resume</a></p>
+    <h2>Website Service Options for Small Businesses</h2>
+    <p>We offer professionally managed and optimized websites designed to help your business grow online. Explore our service plans:</p>
+  
+    <div class="plan">
+      <h3>Standard Plan – $85/month</h3>
+      <div class="plan-content">
+        <ul>
+          <li>Custom domain + free hosting</li>
+          <li>Mobile-optimized website</li>
+          <li>Professional design using your brand/logo</li>
+          <li>Up to 3 content updates per month</li>
+          <li>Ongoing support and maintenance</li>
+        </ul>
+        <a href="#" class="see-example" data-target="projects">See Example</a>
+      </div>
+    </div>
+  
+    <div class="plan highlighted">
+      <div class="badge">Most Popular</div>
+      <h3>Premium Plan – $150/month</h3>
+      <div class="plan-content">
+        <ul>
+          <li>Everything in the Standard Plan</li>
+          <li>Unlimited monthly content updates</li>
+          <li>Full SEO integration</li>
+          <li>Google Business Profile setup</li>
+          <li>Google Analytics monthly reporting</li>
+          <li>Free logo design</li>
+          <li>Privacy Policy included ensuring customer data is secure</li>
+          <li>Call-to-action buttons for generating leads</li>
+        </ul>
+        <a href="#" class="see-example" data-target="projects">See Example</a>
+      </div>
+    </div>
+  
+    <div class="plan">
+      <h3>Online Store Plan – $300/month + $400 setup fee</h3>
+      <div class="plan-content">
+        <ul>
+          <li>Everything in the Premium Plan</li>
+          <li>Product catalog with images, descriptions, and pricing</li>
+          <li>Shopping cart and checkout system</li>
+          <li>Payment via Stripe, PayPal, or Square</li>
+          <li>Order notifications and basic tracking</li>
+          <li>Inventory management tools</li>
+          <li>Training or documentation for store use</li>
+        </ul>
+      </div>
+      <a href="#" class="see-example" data-target="projects">See Example</a>
+    </div>
+  
+    <p>Not sure which fits your business? <strong>Let’s talk!</strong> We’ll help match you to the right solution.</p>
   </section>
   
   <!-- Projects Section -->
@@ -45,10 +107,22 @@
   </section>
   
   <!-- Contact Section -->
-  <section id="contact" class="content-section" style="display: none;">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:caydendeshon@gmail.com">caydendeshon@gmail.com</a></p>
-    <p>Phone: (309) 648-7840</p>
+  <section id="contact" class="content-section contact-section" style="display: none;">
+    <h2>Let’s Get in Touch</h2>
+    <p class="contact-intro">Have questions about hosting plans, website design, or online store setup? Reach out anytime — we’re here to help.</p>
+  
+    <div class="contact-info">
+      <div class="contact-card">
+        <h3>Email</h3>
+        <p><a href="mailto:caydendeshon@gmail.com">caydendeshon@gmail.com</a></p>
+      </div>
+      <div class="contact-card">
+        <h3>Phone</h3>
+        <p><a href="tel:3096487840">(309) 648-7840</a></p>
+      </div>
+    </div>
+  
+    <p class="contact-cta">Ready to build something great? Let’s start the conversation.</p>
   </section>
 
   <footer>

@@ -5,12 +5,54 @@ body {
     background: #f9f9f9;
     color: #333;
   }
-  
+
   header {
     background: #005b96;
     color: white;
     padding: 20px;
     text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .header-left,
+.header-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-text {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.header-button {
+  background: white;
+  color: #005b96;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.header-button:hover {
+  background-color: #e0e0e0;
+}
+  
+  .logo-wrapper {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .logo-wrapper {
@@ -38,6 +80,7 @@ body {
     background: #eee;
     padding: 10px 0;
     margin: 0;
+    border-bottom: 3px solid #005b96; /* Add this line */
   }
   
   nav ul li {
@@ -120,9 +163,160 @@ body {
     margin-top: 40px;
   }
 
+  .plan {
+    background: #fff;
+    border: 2px solid #005b96;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .plan:hover {
+    transform: scale(1.02);
+  }
+  
+  .plan h3 {
+    margin-top: 0;
+    color: #005b96;
+  }
+  
+  .plan ul {
+    padding-left: 20px;
+  }
+  
+  .plan ul li {
+    margin-bottom: 8px;
+  }
+  
+  .plan.highlighted {
+    background: #e6f0fa;
+    border-color: #003f6b;
+  }
+
+  .badge {
+    position: absolute;
+    background-color: #ff9800;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 50px;
+    top: 15px;
+    right: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  .plan {
+    position: relative;
+    padding-bottom: 60px; /* leave room for the button */
+  }
+
+  .sticky-nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: #eee;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .plan-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .plan-content ul {
+    flex: 1;
+    margin: 0;
+  }
+  
+  .see-example {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-decoration: none;
+    background-color: #005b96;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+  }
+  
+  .see-example:hover {
+    background-color: #003f6b;
+  }
+
+  .contact-section {
+    background: #f0f7ff;
+    border-top: 2px solid #005b96;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .contact-intro {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  
+  .contact-card {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    min-width: 220px;
+  }
+  
+  .contact-card h3 {
+    margin-top: 0;
+    color: #005b96;
+  }
+  
+  .contact-card a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .contact-card a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact-cta {
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+
   @media (max-width: 768px) {
     .project {
       width: 90%;
+    }
+
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .header-left,
+    .header-right {
+      margin: 10px 0;
     }
   
     nav ul {
