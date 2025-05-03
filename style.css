@@ -7,7 +7,7 @@ body {
   }
 
   header {
-    background: #005b96;
+    background: #0165a7;
     color: white;
     padding: 20px;
     text-align: center;
@@ -109,7 +109,7 @@ body {
   }
   
   nav ul li a:hover {
-    color: #003f6b;
+    color: #ff9800;
   }
   
   nav ul li a:hover::after {
@@ -157,7 +157,8 @@ body {
   }
   
   footer {
-    background: #ddd;
+    background: #1c79b8; /* Match header blue */
+    color: white;
     text-align: center;
     padding: 10px;
     margin-top: 40px;
@@ -258,6 +259,7 @@ body {
     border-top: 2px solid #005b96;
     padding: 40px 20px;
     text-align: center;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.03); /* Soft inner shadow */
   }
   
   .contact-intro {
