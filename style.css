@@ -358,6 +358,18 @@ body {
     margin-top: 40px;
   }
 
+  .footer-link {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ff9800;
+}
+
   .plan {
     background: #fff;
     border: 2px solid #005b96;
