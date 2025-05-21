@@ -30,9 +30,9 @@
   
   <section class="hero">
     <div class="hero-content">
-      <h1>Websites & Software for Small Businesses</h1>
-      <p>Modern, fast, and affordable solutions built for entrepreneurs, by entrepreneurs.</p>
-      <a href="#contact" class="cta-button">Get a Free Quote</a>
+      <h1>We Don’t Just Build Websites — We Help You Get More Leads</h1>
+      <p>Fully-managed web solutions tailored for growth, visibility, and conversions.</p>
+      <a href="#" class="cta-button nav-link" data-target="contact">Get a Free Quote</a>
     </div>
   </section>
 
@@ -42,6 +42,7 @@
       <ul>
         <li><a href="#" class="nav-link" data-target="home">Home</a></li>
         <li><a href="#" class="nav-link" data-target="projects">Our Projects</a></li>
+        <li><a href="#" class="nav-link" data-target="testimonial">Testimonials</a></li>
         <li><a href="#" class="nav-link" data-target="contact">Contact</a></li>
       </ul>
     </nav>
@@ -49,9 +50,45 @@
   
   <!-- Home Section -->
   <section id="home" class="content-section">
-    <h2>Websites & Software for Small Businesses Ready to Grow</h2>
+
+      <section id="how-it-works" class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="slideshow-container">
+          <div class="slide-wrapper">
+            <div class="slide active" style="background-image: url('images/consult.jpg');">
+              <div class="slide-gradient-top"></div>
+              <div class="slide-gradient-bottom"></div>
+              <div class="slide-text fade-on-scroll">
+                <h3>1. Free Consultation</h3>
+                <p>Tell us about your business and goals — we’ll match you with the right plan.</p>
+              </div>
+            </div>
+
+            <div class="slide" style="background-image: url('images/build.jpg');">
+              <div class="slide-gradient-top"></div>
+              <div class="slide-gradient-bottom"></div>
+              <h3>2. We Build It</h3>
+              <p>We design and launch your site, taking care of content, layout, and optimization.</p>
+            </div>
+
+            <div class="slide" style="background-image: url('images/support.jpg');">
+              <div class="slide-gradient-top"></div>
+              <div class="slide-gradient-bottom"></div>
+              <h3>3. We Maintain It</h3>
+              <p>Your site stays fresh with personalized updates, analytics, and ongoing support — no tech skills needed.</p>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow-buttons">
+          <button id="prevSlide">←</button>
+          <button id="nextSlide">→</button>
+        </div>
+      </section>
+
+
+    <h2 id="plans">Websites & Software for Small Businesses Ready to Grow</h2>
     <p>We help entrepreneurs and startups get online fast with modern, affordable solutions — no tech experience required.</p>
-    <div class="plan">
+    <div class="plan" data-plan="Standard Plan">
       <h3>Standard Plan – $85/month</h3>
       <div class="plan-content">
         <ul>
@@ -66,7 +103,7 @@
       </div>
     </div>
   
-    <div class="plan highlighted">
+    <div class="plan highlighted" data-plan="Premium Plan">
       <div class="badge">Most Popular</div>
       <h3>Premium Plan – $200/month</h3>
       <div class="plan-content">
@@ -84,7 +121,7 @@
       </div>
     </div>
   
-    <div class="plan">
+    <div class="plan" data-plan="Ecommerce Plan">
       <h3>Online Store Plan – $300/month + $600-800 setup fee</h3>
       <div class="plan-content">
         <ul>
@@ -100,21 +137,30 @@
       <a href="#" class="see-example" data-target="projects">See Example</a>
     </div>
 
-    <h3 style="margin-top: 60px;">How It Works</h3>
-    <div style="max-width: 800px; margin: 0 auto; text-align: left; font-size: 16px;">
-      <ol style="padding-left: 20px;">
-        <li><strong>Free Consultation:</strong> Tell us about your business and goals — we’ll match you with the right plan.</li>
-        <li><strong>We Build It:</strong> We design and launch your site, taking care of content, layout, and optimization.</li>
-        <li><strong>We Maintain It:</strong> Your site stays fresh with updates, analytics, and ongoing support — no tech skills needed.</li>
-      </ol>
-      <p style="margin-top: 20px;"><strong>Why choose CDSoftware?</strong></p>
-      <ul style="padding-left: 20px;">
-        <li>Transparent pricing — no hidden fees.</li>
-        <li>Fast turnaround — most sites launch in 7–10 days.</li>
-        <li>Real human support — talk to someone who knows your site.</li>
-      </ul>
+    <div class="trust-bar">
+      <p class="trust-text">Trusted by small businesses across Illinois</p>
+      <div class="trust-logos">
+        <img src="images/MPfavi.png" alt="Client Logo">
+        <img src="images/cupcake_icon.png" alt="Client Logo">
+        <img src="images/voyage_icon.png" alt="Client Logo">
+      </div>
     </div>
-  
+
+    <div class="benefits-bar">
+      <div class="benefit">
+        <img src="images/lightning.png" alt="Fast" />
+        <p>Launch in 7–10 Days</p>
+      </div>
+      <div class="benefit">
+        <img src="images/seo.png" alt="SEO" />
+        <p>SEO Built-In</p>
+      </div>
+      <div class="benefit">
+        <img src="images/lock.png" alt="Secure" />
+        <p>Privacy & Support</p>
+      </div>
+    </div>
+
     <p>Not sure which fits your business? <strong>Let’s talk!</strong> We’ll help match you to the right solution.</p>
   </section>
   
@@ -160,6 +206,8 @@
     </div>
   </section>
   
+
+
   <!-- Contact Section -->
   <section id="contact" class="content-section contact-section" style="display: none;">
     <h2>Let’s Get in Touch</h2>
@@ -177,6 +225,39 @@
     </div>
   
     <p class="contact-cta">Ready to build something great? Let’s start the conversation.</p>
+
+    <form action="https://formspree.io/f/xjkwzdlv" method="POST" class="contact-form">
+      <label for="plan">Preferred Plan</label>
+      <select id="plan" name="Preferred Plan" required>
+        <option value="">-- Select a Plan --</option>
+        <option value="Standard Plan">Standard Plan</option>
+        <option value="Premium Plan">Premium Plan</option>
+        <option value="Ecommerce Plan">Ecommerce Plan</option>
+        <option value="Unsure">Unsure</option>
+      </select>
+
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="Name" required>
+
+      <label for="business">Business Name</label>
+      <input type="text" id="business" name="Business Name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="Email" required>
+
+      <label for="message">Optional Message</label>
+      <textarea id="message" name="Message" rows="5" placeholder="Any questions or details you'd like to share?"></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <section id="testimonial" class="testimonials content-section" style="display: none;">
+    <h3>What Our Clients Are Saying</h3>
+    <div class="testimonial">
+      <p>"CDSoftware launched our site in under a week — and we started getting leads the same day!"</p>
+      <strong>— Bradley M., Miller Precision Fleet Washing</strong>
+    </div>
   </section>
 
   <footer>
@@ -184,5 +265,6 @@
   </footer>
 
   <script src="script.js"></script>
+  <a href="#" class="floating-cta nav-link" data-target="contact">Let’s Talk</a>
 </body>
 </html>
