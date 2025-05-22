@@ -224,7 +224,7 @@ body {
   line-height: 1.6;
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 100px;
+  padding: 0 100px; /* word container */
   text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
 }
 
@@ -282,9 +282,9 @@ body {
 
 .slide-gradient-bottom {
   position: absolute;
-  bottom: 0px;
+  bottom: -5px;
   left: 0; right: 0;
-  height: 400px;
+  height: 350px;
   background: linear-gradient(to top, #7e6b55, rgba(107, 90, 70, 0));
   z-index: 1;
   pointer-events: none;
